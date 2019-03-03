@@ -26,8 +26,11 @@ namespace ClassesExamples //NameSpace
             var taffy = new Candy("Orange", "Orange Saltwater Taffy", CandyType.Stretchy);
 
             taffy.SetRating(10);
-            taffy.SetRating(1);
+            taffy.SetRating(5, "Just kinda liked it.");
                 
+            Console.WriteLine(taffy.ToString());
+            Console.ReadLine();
+
             Console.WriteLine("Hello World!");
         }
     }

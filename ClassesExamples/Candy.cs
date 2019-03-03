@@ -7,11 +7,11 @@ namespace ClassesExamples
     class Candy
     {
         //Properties
-        public string Flavor { get; private set; }
+        public string Flavor { get; }
         public int Rating { get; private set; }
-        public string Review { get; private set; };
-        public string Name { get; private set; }
-        public CandyType Type { get; private set; }
+        public string Review { get; private set; }
+        public string Name { get; }
+        public CandyType Type { get; }
 
         //Fields
         const int MinRatingValue = 1;  //Feild
@@ -43,15 +43,12 @@ namespace ClassesExamples
             SetRating(userRating);
             Review = review;
         }
+
+        public override string ToString()
+        {
+            return $"This is {Type} {Name}, with a(n) {Flavor} flavor, rated {Rating} with a review of {Review}";
+        }
     }
 
-    enum CandyType // Are just numbers under the hood
-    {
-        Chocolate,
-        HardCandy,
-        Caramel,
-        Sour,
-        Stretchy,
-        Nut
-    }
+    
 }
