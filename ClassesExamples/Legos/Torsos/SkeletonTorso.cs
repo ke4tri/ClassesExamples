@@ -4,11 +4,11 @@ using System.Text;
 
 namespace ClassesExamples.Legos.Torsos
 {
-    class SkeletonTorso : Torso
+    class Torsos : Torso
     {
 
-        public SkeletonTorso(int numberOfArms)
-            : base (numberOfArms, Sex.Shrug, Colors.Bone, "bony")
+        public Torsos(int numberOfArms)
+            : base (numberOfArms, Sex.Shrug, Color.Bone, "bony")
         {
 
         }

@@ -10,9 +10,9 @@ namespace ClassesExamples.Legos.Torso
         public int NumberOfArms { get; protected set; }
         public string FitnessOfAbdomen { get; protected set; }
         public Sex Sex { get; protected set; }
-        public Colors Color { get; protected set; }
+        public Color Color { get; protected set; }
 
-        protected Torso(int numOfArms, Sex sex, Colors color, string fitnessOfAbdomen)
+        protected Torso(int numOfArms, Sex sex, Color color, string fitnessOfAbdomen)
         {
             NumberOfArms = numOfArms;
             Sex = sex;

@@ -5,7 +5,7 @@ using System.Text;
 namespace ClassesExamples.Legos
 {
     
-        internal enum Colors
+        internal enum Color
         {
             Yellow,
             Red,

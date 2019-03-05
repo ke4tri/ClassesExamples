@@ -7,7 +7,7 @@ namespace ClassesExamples.Legos.Torso
     class ScaleyTorso : Torso
     {
         public ScaleyTorso() 
-            : base(4, Sex.Other, Colors.Red, "Hard as a rock")
+            : base(4, Sex.Other, Color.Red, "Hard as a rock")
         {
 
         }

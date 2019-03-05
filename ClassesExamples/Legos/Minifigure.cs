@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Collections.Generic;
+using System.Text;
 using ClassesExamples.Legos.Heads;
 using ClassesExamples.Legos.Torsos;
 
@@ -7,13 +10,13 @@ namespace ClassesExamples.Legos
     class Minifigure
     {
         public Head Head { get; set; }
-        public SkeletonTorso Body { get; set; }
+        public Torsos Body { get; set; }
     }
 
-    public Minifigure(Head head, FitTorso body)
+    public Minifigure(Head head, Torso body)
     {
         Head = head;
-        body = body;
+        Body = body;
     }
 
     public void Eat()

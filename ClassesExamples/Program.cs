@@ -36,7 +36,7 @@ namespace ClassesExamples //NameSpace
             var martinHead = new Bald();
             var astronaught = new Astronaut();
 
-            var fitTorso = new FitTorso(2, Sex.Male, Legos.Colors.Frecles);
+            var fitTorso = new FitTorso(2, Sex.Male, Legos.Color.Frecles);
             fitTorso.Crunch(12);
 
             Console.ReadLine();
