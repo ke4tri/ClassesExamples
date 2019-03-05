@@ -1,4 +1,6 @@
 ﻿using System;
+using ClassesExamples.Legos.Heads;
+using ClassesExamples.Legos.Torsos;
 
 namespace ClassesExamples //NameSpace
 {
@@ -29,9 +31,15 @@ namespace ClassesExamples //NameSpace
             taffy.SetRating(5, "Just kinda liked it.");
                 
             Console.WriteLine(taffy.ToString());
-            Console.ReadLine();
 
-            Console.WriteLine("Hello World!");
+            var myDogHead = new Dog();
+            var martinHead = new Bald();
+            var astronaught = new Astronaut();
+
+            var fitTorso = new FitTorso(2, Sex.Male, Legos.Colors.Frecles);
+            fitTorso.Crunch(12);
+
+            Console.ReadLine();
         }
     }
 }
